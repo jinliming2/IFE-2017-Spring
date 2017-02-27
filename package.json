@@ -1,0 +1,27 @@
+{
+  "name": "ife-2017-spring",
+  "version": "1.0.0",
+  "description": "Baidu IFE 2017 Spring",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinliming2/IFE-2017-Spring.git"
+  },
+  "keywords": [
+    "baidu",
+    "ife",
+    "2017",
+    "spring"
+  ],
+  "author": "Liming Jin, jinliming2@gmail.com",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/jinliming2/IFE-2017-Spring/issues"
+  },
+  "homepage": "https://github.com/jinliming2/IFE-2017-Spring#readme",
+  "dependencies": {
+    "three": "^0.84.0"
+  }
+}
