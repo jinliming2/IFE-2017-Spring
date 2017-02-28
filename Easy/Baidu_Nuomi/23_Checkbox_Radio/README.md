@@ -1,5 +1,5 @@
 # 自定义checkbox， radio样式
-Results show: [https://jinliming2.github.io/IFE-2017-Spring/普通/百度糯米前端技术学院/自定义checkbox，%20radio样式/index.html](https://jinliming2.github.io/IFE-2017-Spring/%E6%99%AE%E9%80%9A/%E7%99%BE%E5%BA%A6%E7%B3%AF%E7%B1%B3%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2/%E8%87%AA%E5%AE%9A%E4%B9%89checkbox%EF%BC%8C%20radio%E6%A0%B7%E5%BC%8F/index.html)
+Results show: [https://jinliming2.github.io/IFE-2017-Spring/Easy/Baidu_Nuomi/23_Checkbox_Radio/index.html](https://jinliming2.github.io/IFE-2017-Spring/Easy/Baidu_Nuomi/23_Checkbox_Radio/index.html)
 
 Link: [http://ife.baidu.com/course/detail/id/23](http://ife.baidu.com/course/detail/id/23)
 

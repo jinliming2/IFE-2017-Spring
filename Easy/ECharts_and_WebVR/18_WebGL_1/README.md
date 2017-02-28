@@ -1,5 +1,5 @@
 # WebGL No.1 - Three.js 入门
-Results show: [https://jinliming2.github.io/IFE-2017-Spring/普通/ECharts%20%26%20WebVR学院/WebGL%20No.1%20-%20Three.js%20入门/index.html](https://jinliming2.github.io/IFE-2017-Spring/%E6%99%AE%E9%80%9A/ECharts%20%26%20WebVR%E5%AD%A6%E9%99%A2/WebGL%20No.1%20-%20Three.js%20%E5%85%A5%E9%97%A8/index.html)
+Results show: [https://jinliming2.github.io/IFE-2017-Spring/Easy/ECharts_and_WebVR/18_WebGL_1/index.html](https://jinliming2.github.io/IFE-2017-Spring/Easy/ECharts_and_WebVR/18_WebGL_1/index.html)
 
 Link: [http://ife.baidu.com/course/detail/id/18](http://ife.baidu.com/course/detail/id/18)
 

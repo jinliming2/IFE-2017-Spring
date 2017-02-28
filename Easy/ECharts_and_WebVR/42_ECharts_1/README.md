@@ -1,5 +1,5 @@
 # ECharts NO.1 - 零基础绘制ECharts图表
-Results show: [https://jinliming2.github.io/IFE-2017-Spring/普通/ECharts%20%26%20WebVR学院/ECharts%20NO.1%20-%20零基础绘制ECharts图表/index.html](https://jinliming2.github.io/IFE-2017-Spring/%E6%99%AE%E9%80%9A/ECharts%20%26%20WebVR%E5%AD%A6%E9%99%A2/ECharts%20NO.1%20-%20%E9%9B%B6%E5%9F%BA%E7%A1%80%E7%BB%98%E5%88%B6ECharts%E5%9B%BE%E8%A1%A8/index.html)
+Results show: [https://jinliming2.github.io/IFE-2017-Spring/Easy/ECharts_and_WebVR/42_ECharts_1/index.html](https://jinliming2.github.io/IFE-2017-Spring/Easy/ECharts_and_WebVR/42_ECharts_1/index.html)
 
 Link: [http://ife.baidu.com/course/detail/id/42](http://ife.baidu.com/course/detail/id/42)
 
