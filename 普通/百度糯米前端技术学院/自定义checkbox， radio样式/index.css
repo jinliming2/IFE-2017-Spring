@@ -1,3 +1,10 @@
+label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /** 背景图 */
 /* Radio */
 .bkg input[type=radio] {
