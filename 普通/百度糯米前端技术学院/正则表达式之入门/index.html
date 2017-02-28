@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="author" content="金黎明,Liming Jin,jinliming2@gmail.com,Tianjin China">
+    <meta name="theme-color" content="white">
+    <title>Regexp</title>
+    <style>
+        input {
+            width: 300px;
+            line-height: 2em;
+            padding: 0 8px;
+            margin: 8px;
+            border: 1px solid #eee;
+        }
+        .false:before {
+            content: 'false';
+            color: red;
+            font-weight: bold;
+        }
+        .true:before {
+            content: 'true';
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <label for="tel">手机号：</label>
+    <input id="tel" type="text" placeholder="输入，或点击下面的测试用例">
+    <span id="tel-tip" class="false"></span>
+    <p>正则表达式：/^1([38]\d{9}|4[579]\d{8}|5[0-35-9]\d{8}|7[0135-8]\d{8})$/</p>
+    <p>
+        P.S. 手机号段信息来自百度百科
+        <a href="http://baike.baidu.com/item/%E6%89%8B%E6%9C%BA%E5%8F%B7%E7%A0%81#2" target="_blank" rel="nofollow">
+            手机号码
+        </a>
+    </p>
+</div>
+<div>
+    <label for="word">单词：</label>
+    <input id="word" type="text" placeholder="输入，或点击下面的测试用例">
+    <span id="word-tip" class="false"></span>
+    <p>正则表达式：/(^|\s)(\w+)\s+\2(\s|$)/</p>
+</div>
+<div>
+    <h2>测试用例</h2>
+    <h3>手机号</h3>
+    <a href="javascript:tel('18812011232');">18812011232</a>// 测试结果应该为 true<br>
+    <a href="javascript:tel('18812312');">18812312</a>// false<br>
+    <a href="javascript:tel('12345678909');">12345678909</a>// false<br>
+    <h3>单词</h3>
+    <a href="javascript:word('foo foo bar');">foo foo bar</a>// true<br>
+    <a href="javascript:word('foo bar foo');">foo bar foo</a>// false  有重复单词但是不相邻<br>
+    <a href="javascript:word('foo  barbar bar');">foo  barbar bar</a>// false<br>
+</div>
+<script>
+    let _tel = document.getElementById('tel'),
+        _word = document.getElementById('word');
+    let t = document.getElementById('tel-tip');
+    let w = document.getElementById('word-tip');
+    let _t = () => {
+        t.className = /^1([38]\d{9}|4[579]\d{8}|5[0-35-9]\d{8}|7[0135-8]\d{8})$/.test(_tel.value);
+    };
+    let _w = () => {
+        w.className = /(^|\s)(\w+)\s+\2(\s|$)/.test(_word.value);
+    };
+    _tel.addEventListener('input', _t);
+    _word.addEventListener('input', _w);
+    let tel = (tel) => {
+        _tel.value = tel;
+        _t();
+    };
+    let word = (word) => {
+        _word.value = word;
+        _w();
+    };
+</script>
+</body>
+</html>
