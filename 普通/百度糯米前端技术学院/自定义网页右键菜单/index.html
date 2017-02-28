@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="author" content="金黎明,Liming Jin,jinliming2@gmail.com,Tianjin China">
+    <meta name="theme-color" content="white">
+    <title>Context Menu</title>
+    <style>
+        .block {
+            width: 200px;
+            height: 200px;
+            margin: 16px;
+            float: left;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .orange {
+            background-color: orange;
+        }
+    </style>
+    <link rel="stylesheet" href="./menu.css">
+</head>
+<body>
+<div class="block red" data-menu="menu1">右键菜单1</div>
+<div class="block green" data-menu="menu2">右键菜单2</div>
+<div class="block blue" data-menu="menu3">右键菜单3</div>
+<div class="block orange">没有自定义右键菜单</div>
+
+<template id="menu1">
+    <li>菜单项1</li>
+    <li>菜单项2</li>
+    <li>菜单项3</li>
+</template>
+<template id="menu2">
+    <li>菜单项4</li>
+    <li>菜单项5</li>
+    <li>菜单项6</li>
+</template>
+<template id="menu3">
+    <li>菜单项7</li>
+    <li>菜单项8</li>
+    <li>菜单项9</li>
+</template>
+<script src="./menu.js"></script>
+</body>
+</html>
