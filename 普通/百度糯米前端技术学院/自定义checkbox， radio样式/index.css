@@ -1,0 +1,77 @@
+/** 背景图 */
+/* Radio */
+.bkg input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('./index.png') no-repeat -24px -10px;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    margin: 0 5px;
+}
+
+.bkg input[type=radio]:checked {
+    background-position-x: -59px;
+}
+
+/* Checkbox */
+.bkg input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('./index.png') no-repeat -25px -31px;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    margin: 0 5px;
+}
+
+.bkg input[type=checkbox]:checked {
+    background-position-x: -60px;
+}
+
+/** 伪元素 */
+/* Radio */
+.fke input[type=radio] {
+    visibility: hidden;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    margin: 0 5px;
+}
+
+.fke input[type=radio]:before {
+    content: '\20';
+    visibility: visible;
+    display: block;
+    background: url('./index.png') no-repeat -24px -10px;
+    width: 16px;
+    height: 16px;
+}
+
+.fke input[type=radio]:checked:before {
+    background-position-x: -59px;
+}
+
+/* Checkbox */
+.fke input[type=checkbox] {
+    visibility: hidden;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    margin: 0 5px;
+}
+
+.fke input[type=checkbox]:before {
+    content: '\20';
+    visibility: visible;
+    display: block;
+    background: url('./index.png') no-repeat -25px -31px;
+    width: 16px;
+    height: 16px;
+}
+
+.fke input[type=checkbox]:checked:before {
+    background-position-x: -60px;
+}
