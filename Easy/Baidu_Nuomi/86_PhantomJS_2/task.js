@@ -116,6 +116,7 @@ page.open('https://www.baidu.com/s?ie=GBK&wd=' + encodeURI(arg), function(status
     //追加数据
     json.word = arg;  //搜索关键字
     json.time = Date.now() - _time;  //处理时间
+    device && device.hasOwnProperty('name') && (json.device = device['name']);
     //输出结果
     console.log(JSON.stringify(json, null, 4));
     //退出
