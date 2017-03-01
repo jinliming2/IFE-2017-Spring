@@ -3,7 +3,7 @@
  */
 "use strict";
 //设置编码
-phantom.outputEncoding = "GB18030";
+phantom.outputEncoding = 'GB18030';
 //引入包
 var page = require('webpage').create(),
     system = require('system');
@@ -65,7 +65,7 @@ function processPage() {
             //缩略图 pic
             dom = container.querySelector('img.c-img6');
             dom && (data.pic = processLink(dom.src));
-            json.dataList[json.dataList.length] = data;
+            json.dataList.push(data);
         }
         json.code = 1;  //成功状态码
         json.msg = '抓取成功';  //成功状态信息
@@ -77,15 +77,21 @@ function processPage() {
 
 //加载页面
 page.open('https://www.baidu.com/s?ie=GBK&wd=' + encodeURI(arg), function(status) {
-    if(status === "success") {
+    var json;
+    if(status === 'success') {
         //处理页面
-        var json = page.evaluate(processPage);
-        //追加数据
-        json.word = arg;  //搜索关键字
-        json.time = Date.now() - _time;  //处理时间
-        //输出结果
-        console.log(JSON.stringify(json, null, 4));
+        json = page.evaluate(processPage);
+    } else {
+        json = {
+            code: 0,
+            msg: '页面加载失败！',
+        };
     }
+    //追加数据
+    json.word = arg;  //搜索关键字
+    json.time = Date.now() - _time;  //处理时间
+    //输出结果
+    console.log(JSON.stringify(json, null, 4));
     //退出
     phantom.exit();
 });
