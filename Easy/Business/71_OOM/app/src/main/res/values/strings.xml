@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OOM</string>
+    <string name="static_activities">静态 Activity</string>
+    <string name="static_views">静态 View</string>
+    <string name="singleton">单例</string>
+    <string name="animation">逐帧动画（直接OOM）</string>
+</resources>
